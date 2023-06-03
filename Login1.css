@@ -148,9 +148,9 @@ body {
 
 
 .message{
+    display: none;
     color: #ffff;
     font-size: 1.2rem;
     text-align: center;
-    display: none;
     padding-top:10rem ;
 }

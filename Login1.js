@@ -14,7 +14,6 @@ login.addEventListener("click", () => {
         container.style.display = "none";
         message.style.display = "block";
         message.innerHTML = `You can go back Don't waste your time here`
-        
 
     }
 
