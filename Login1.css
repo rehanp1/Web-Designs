@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --main-margin: .5rem;
+    --main-padding: .7rem;
+    --red-color: #f83461;
+    --gray-color: #838280;
+    --input-border-color: #cfcfcf;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(210deg, #707fcc, #9968aa, #ae5d9b, #ca4d85) no-repeat;
+}
+
+
+.container {
+    width: 20%;
+    border-radius: .275rem;
+    text-align: center;
+    margin: 0% auto;
+    padding: 2.5rem 4rem;
+    position: relative;
+    background-color: #ffff;
+    transform: translateY(30%);
+}
+
+.container .logo {
+    border-radius: 100%;
+    width: 4rem;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-items: center;
+    margin: 0rem auto;
+    position: absolute;
+    top: 0rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--red-color);
+}
+
+.container .logo i {
+    font-size: 2rem;
+    color: #ffff;
+}
+
+.form-box input[type='text'] {
+    margin-top: 2rem;
+}
+
+.form-box>input {
+    border: none;
+    outline: 2px solid var(--input-border-color);
+    width: 94%;
+    padding: var(--main-padding) .5rem;
+    margin: var(--main-margin) 0rem;
+
+}
+
+.form-box .check-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: var(--main-margin) 0rem;
+}
+
+.form-box .check-section input {
+    width: .9rem;
+    accent-color: var(--red-color);
+}
+
+.form-box .check-section p {
+    padding: 0rem .5rem;
+    color: var(--gray-color);
+}
+
+.form-box .login-button {
+    width: 100%;
+    padding: var(--main-padding) 0rem;
+    margin: var(--main-margin) 0rem;
+    border: none;
+    background-color: var(--red-color);
+    color: white;
+}
+
+.container>p {
+    text-align: left;
+    color: var(--gray-color);
+}
+
+.container .login-via-social {
+    border: 1px solid var(--input-border-color);
+    border-left: none;
+    border-right: none;
+    margin: 2rem 0rem .5rem 0rem;
+    padding: .4rem;
+    color: var(--gray-color);
+}
+
+.container .social-buttons button {
+    padding: var(--main-padding) .5rem;
+    margin: var(--main-margin);
+    background-color: #fa7090;
+    color: #ffff;
+    border: none;
+}
+
+.container .social-buttons button i {
+    padding: .2rem;
+    color: #ffff;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        width: 70%;
+        margin: 0% auto;
+        padding: 2.5rem 1.5rem;
+        transform: translateY(20%);
+    }
+
+    .container .social-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width:500px)and (max-width:800px) {
+    .container {
+        width: 50%;
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media only screen and (min-width:800px)and (max-width:1050px) {
+
+    .container {
+        width: 30%;
+    }
+}
