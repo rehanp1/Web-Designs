@@ -13,7 +13,7 @@ login.addEventListener("click", () => {
         alert(`Welcome ${myname.value}`);
         container.style.display = "none";
         message.style.display = "block";
-        message.innerHTML = `You can go back Don't waste your time here`
+        message.innerHTML = `You can go back ${myname.value}, Don't waste your time here`
 
     }
 
