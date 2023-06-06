@@ -61,6 +61,10 @@ body {
 
 }
 
+.form-box > input:focus{
+    outline: 2px solid blue;
+}
+
 .form-box .check-section {
     display: flex;
     flex-direction: row;
